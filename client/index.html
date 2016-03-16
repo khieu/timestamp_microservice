@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Chat Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>API Basejump: Timestamp microservice</h4>
+    <br>
+    User stories:
+    <ul>
+      <li>1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016) </li>  
+      <li>2) If it does, it returns both the Unix timestamp and the natural language form of that date. </li>
+      <li>3) If it does not contain a date or Unix timestamp, it returns null for those properties. </li>
+    </ul>
+
+    <h4>Example usage:</h4>
+    <ul>
+      <li>https://timestamp-ms.herokuapp.com/December%2015,%202015</li>
+      <li>https://timestamp-ms.herokuapp.com/1450137600</li>
+    </ul>
+    
+    <h4>Example output:</h4>
+    <ul>
+      <li>{ "unix": 1450137600, "natural": "December 15, 2015" }</li>
+    </ul>
+
+  </body>
+</html>
